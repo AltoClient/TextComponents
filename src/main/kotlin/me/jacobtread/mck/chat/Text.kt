@@ -1,5 +1,8 @@
 package me.jacobtread.mck.chat
 
+import me.jacobtread.mck.chat.events.ClickEvent
+import me.jacobtread.mck.chat.events.HoverEvent
+
 interface Text : Iterable<Text> {
 
     /**
@@ -61,5 +64,10 @@ interface Text : Iterable<Text> {
      * @param text The parent text
      */
     fun parent(text: Text)
+
+    fun withFormat(formatting: Formatting): Text
+    fun withHover(hoverEvent: HoverEvent): Text
+    fun withClick(clickEvent: ClickEvent): Text
+    fun withInsertion(insertion: String): Text
 
 }

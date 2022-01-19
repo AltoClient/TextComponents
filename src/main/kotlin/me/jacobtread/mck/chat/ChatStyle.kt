@@ -105,7 +105,7 @@ data class ChatStyle(
 
         override fun deserialize(json: JsonElement, typeOfT: Type, context: JsonDeserializationContext): ChatStyle {
             val root = json as JsonObject
-            val color = if (root.has("color")) context.deserialize(root["color"], Formatting::class.java) else null
+            val color: Formatting? = if (root.has("color")) context.deserialize(root["color"], Formatting::class.java) else null
             val bold = if (root.has("bold")) root["bold"].asBoolean else null
             val italic = if (root.has("italic")) root["italic"].asBoolean else null
             val underlined = if (root.has("underlined")) root["underlined"].asBoolean else null

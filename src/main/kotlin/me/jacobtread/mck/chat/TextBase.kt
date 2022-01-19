@@ -1,5 +1,7 @@
 package me.jacobtread.mck.chat
 
+import me.jacobtread.mck.chat.events.ClickEvent
+import me.jacobtread.mck.chat.events.HoverEvent
 import me.jacobtread.mck.chat.types.LiteralText
 
 abstract class TextBase : Text {
@@ -7,8 +9,28 @@ abstract class TextBase : Text {
     override var chatStyle: ChatStyle = ChatStyle.EMPTY
         set(value) {
             field = value
-            siblings.forEach { it.chatStyle = chatStyle.withParent(value) }
+            siblings.forEach { it.parent(this) }
         }
+
+    override fun withFormat(formatting: Formatting): Text {
+        chatStyle = chatStyle.withFormat(formatting)
+        return this
+    }
+
+    override fun withHover(hoverEvent: HoverEvent): Text {
+        chatStyle = chatStyle.withHoverEvent(hoverEvent)
+        return this
+    }
+
+    override fun withClick(clickEvent: ClickEvent): Text {
+        chatStyle = chatStyle.withClickEvent(clickEvent)
+        return this
+    }
+
+    override fun withInsertion(insertion: String): Text {
+        chatStyle = chatStyle.withInsertion(insertion)
+        return this
+    }
 
     override fun parent(text: Text) {
         chatStyle = chatStyle.withParent(text.chatStyle)
