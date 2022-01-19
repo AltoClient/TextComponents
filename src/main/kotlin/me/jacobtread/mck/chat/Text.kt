@@ -54,4 +54,12 @@ interface Text : Iterable<Text> {
      */
     fun copy(): Text
 
+    /**
+     * Sets the parent element of this text
+     * component used for updating style parents
+     *
+     * @param text The parent text
+     */
+    fun parent(text: Text)
+
 }

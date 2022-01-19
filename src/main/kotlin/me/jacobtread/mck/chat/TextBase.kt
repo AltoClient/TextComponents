@@ -1,5 +1,7 @@
 package me.jacobtread.mck.chat
 
+import me.jacobtread.mck.chat.types.LiteralText
+
 abstract class TextBase : Text {
     override val siblings: ArrayList<Text> = ArrayList()
     override var chatStyle: ChatStyle = ChatStyle.EMPTY
@@ -7,6 +9,10 @@ abstract class TextBase : Text {
             field = value
             siblings.forEach { it.chatStyle = chatStyle.withParent(value) }
         }
+
+    override fun parent(text: Text) {
+        chatStyle = chatStyle.withParent(text.chatStyle)
+    }
 
     override fun append(text: Text): Text {
         text.chatStyle = text.chatStyle.withParent(chatStyle)

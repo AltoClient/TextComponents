@@ -47,7 +47,6 @@ enum class Formatting(
         return controlString + value.controlString
     }
 
-
     companion object {
         const val FORMAT_CODE = '\u00a7'
         private val FORMATTING_CODE_PATTERN: Pattern = Pattern.compile("(?i)" + '\u00a7' + "[0-9A-FK-OR]")
