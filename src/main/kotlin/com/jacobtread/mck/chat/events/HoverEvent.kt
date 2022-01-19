@@ -1,6 +1,6 @@
-package me.jacobtread.mck.chat.events
+package com.jacobtread.mck.chat.events
 
-import me.jacobtread.mck.chat.Text
+import com.jacobtread.mck.chat.Text
 
 data class HoverEvent(val action: Action, val value: Text) {
     enum class Action(val actionName: String) {

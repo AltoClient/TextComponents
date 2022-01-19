@@ -1,4 +1,4 @@
-package me.jacobtread.mck.chat
+package com.jacobtread.mck.chat
 
 const val BLACK = 0x0
 const val DARK_BLUE = 0xAA

@@ -1,5 +1,5 @@
 
-group = "me.jacobtread.mck.chat"
+group = "com.jacobtread.mck.chat"
 version = "1.0.0"
 
 dependencies {

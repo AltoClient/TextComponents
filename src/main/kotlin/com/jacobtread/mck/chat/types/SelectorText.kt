@@ -1,7 +1,7 @@
-package me.jacobtread.mck.chat.types
+package com.jacobtread.mck.chat.types
 
-import me.jacobtread.mck.chat.Text
-import me.jacobtread.mck.chat.TextBase
+import com.jacobtread.mck.chat.Text
+import com.jacobtread.mck.chat.TextBase
 
 data class SelectorText(val selector: String) : TextBase() {
 
