@@ -3,7 +3,7 @@ package me.jacobtread.mck.chat.types
 import me.jacobtread.mck.chat.ChatStyle
 import me.jacobtread.mck.chat.Text
 import me.jacobtread.mck.chat.TextBase
-import me.jacobtread.mck.chat.providers.TranslationProvider
+import me.jacobtread.mck.utils.providers.TranslationProvider
 
 class TranslationText(val key: String, vararg val formatArgs: Any?) : TextBase() {
 

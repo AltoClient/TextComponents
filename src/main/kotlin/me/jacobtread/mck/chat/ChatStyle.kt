@@ -20,6 +20,8 @@ data class ChatStyle(
         val EMPTY = ChatStyle(null, null, null, null, null, null, null, null, null)
     }
 
+
+
     val isBold: Boolean get() = bold == true
     val isItalic: Boolean get() = italic == true
     val isUnderlined: Boolean get() = underlined == true

@@ -2,7 +2,7 @@ package me.jacobtread.mck.chat.types
 
 import me.jacobtread.mck.chat.Text
 import me.jacobtread.mck.chat.TextBase
-import me.jacobtread.mck.chat.providers.ScoreProvider
+import me.jacobtread.mck.utils.providers.ScoreProvider
 
 data class ScoreText(
     val name: String,
