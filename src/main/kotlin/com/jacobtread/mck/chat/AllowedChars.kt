@@ -9,12 +9,11 @@ object AllowedChars {
     )
 
     fun isAllowed(char: Char): Boolean {
-        return char != com.jacobtread.mck.chat.Formatting.Companion.FORMAT_CODE
-                && char.code > 32 && char.code != 127 // Delete char
+        return char.code != 167 && char.code >= 32 && char.code != 127
     }
 
     @JvmStatic
     fun filter(value: String): String {
-        return value.filter { com.jacobtread.mck.chat.AllowedChars.isAllowed(it) }
+        return value.filter { isAllowed(it) }
     }
 }
