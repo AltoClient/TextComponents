@@ -51,9 +51,7 @@ abstract class TextBase : Text {
     }
 
     override fun asString(): String {
-        val output = StringBuilder()
-        siblings.forEach { output.append(it.asString()) }
-        return output.toString()
+        return ""
     }
 
     override fun formatted(): String {
