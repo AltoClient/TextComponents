@@ -1,8 +1,8 @@
-package com.jacobtread.mck.chat
+package com.jacobtread.alto.chat
 
 import com.google.gson.*
-import com.jacobtread.mck.chat.events.ClickEvent
-import com.jacobtread.mck.chat.events.HoverEvent
+import com.jacobtread.alto.chat.events.ClickEvent
+import com.jacobtread.alto.chat.events.HoverEvent
 import java.lang.reflect.Type
 
 data class ChatStyle(

@@ -1,13 +1,13 @@
-package com.jacobtread.mck.chat
+package com.jacobtread.alto.chat
 
 import com.google.gson.*
-import com.jacobtread.mck.chat.types.LiteralText
-import com.jacobtread.mck.chat.types.ScoreText
-import com.jacobtread.mck.chat.types.SelectorText
-import com.jacobtread.mck.chat.types.TranslationText
-import com.jacobtread.mck.utils.json.EnumTypeAdapterFactory
-import com.jacobtread.mck.utils.json.expectString
-import com.jacobtread.mck.utils.json.expectStringOrDefault
+import com.jacobtread.alto.chat.types.LiteralText
+import com.jacobtread.alto.chat.types.ScoreText
+import com.jacobtread.alto.chat.types.SelectorText
+import com.jacobtread.alto.chat.types.TranslationText
+import com.jacobtread.alto.utils.json.EnumTypeAdapterFactory
+import com.jacobtread.alto.utils.json.expectString
+import com.jacobtread.alto.utils.json.expectStringOrDefault
 import java.lang.reflect.Type
 
 class TextSerializer : JsonDeserializer<Text>, JsonSerializer<Text> {

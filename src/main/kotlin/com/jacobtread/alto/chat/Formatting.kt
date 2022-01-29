@@ -1,4 +1,4 @@
-package com.jacobtread.mck.chat
+package com.jacobtread.alto.chat
 
 import java.util.regex.Pattern
 

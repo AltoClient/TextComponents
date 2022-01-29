@@ -1,8 +1,8 @@
-package com.jacobtread.mck.chat.types
+package com.jacobtread.alto.chat.types
 
-import com.jacobtread.mck.chat.Text
-import com.jacobtread.mck.chat.TextBase
-import com.jacobtread.mck.utils.providers.ScoreProvider
+import com.jacobtread.alto.chat.Text
+import com.jacobtread.alto.chat.TextBase
+import com.jacobtread.alto.utils.providers.ScoreProvider
 
 data class ScoreText(
     val name: String,

@@ -1,8 +1,8 @@
-package com.jacobtread.mck.chat.types
+package com.jacobtread.alto.chat.types
 
-import com.jacobtread.mck.chat.Formatting
-import com.jacobtread.mck.chat.Text
-import com.jacobtread.mck.chat.TextBase
+import com.jacobtread.alto.chat.Formatting
+import com.jacobtread.alto.chat.Text
+import com.jacobtread.alto.chat.TextBase
 
 data class LiteralText(val text: String) : TextBase() {
 

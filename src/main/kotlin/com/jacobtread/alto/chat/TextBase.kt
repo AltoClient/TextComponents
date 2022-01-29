@@ -1,8 +1,8 @@
-package com.jacobtread.mck.chat
+package com.jacobtread.alto.chat
 
-import com.jacobtread.mck.chat.events.ClickEvent
-import com.jacobtread.mck.chat.events.HoverEvent
-import com.jacobtread.mck.chat.types.LiteralText
+import com.jacobtread.alto.chat.events.ClickEvent
+import com.jacobtread.alto.chat.events.HoverEvent
+import com.jacobtread.alto.chat.types.LiteralText
 
 abstract class TextBase : Text {
     override val siblings: ArrayList<Text> = ArrayList()

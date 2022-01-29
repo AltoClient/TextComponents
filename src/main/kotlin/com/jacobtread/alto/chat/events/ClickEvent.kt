@@ -1,4 +1,4 @@
-package com.jacobtread.mck.chat.events
+package com.jacobtread.alto.chat.events
 
 data class ClickEvent(val action: Action, val value: String?) {
     enum class Action(val actionName: String, val allowedInChat: Boolean) {

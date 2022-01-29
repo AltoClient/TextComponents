@@ -1,9 +1,9 @@
-package com.jacobtread.mck.chat.types
+package com.jacobtread.alto.chat.types
 
-import com.jacobtread.mck.chat.ChatStyle
-import com.jacobtread.mck.chat.Text
-import com.jacobtread.mck.chat.TextBase
-import com.jacobtread.mck.utils.providers.TranslationProvider
+import com.jacobtread.alto.chat.ChatStyle
+import com.jacobtread.alto.chat.Text
+import com.jacobtread.alto.chat.TextBase
+import com.jacobtread.alto.utils.providers.TranslationProvider
 
 class TranslationText(val key: String, vararg val formatArgs: Any?) : TextBase() {
 
